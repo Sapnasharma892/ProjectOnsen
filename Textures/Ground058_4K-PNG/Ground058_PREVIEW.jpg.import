@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlhdpftw8x5tk"
-path="res://.godot/imported/Ground058_PREVIEW.jpg-24c70ad1dc84c92627414ce203c17fd8.ctex"
+path="res://.godot/imported/Ground058_PREVIEW.jpg-1519c57cb43bad1522ca38d3cd9b922c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ground058_4K-PNG/Ground058_PREVIEW.jpg"
-dest_files=["res://.godot/imported/Ground058_PREVIEW.jpg-24c70ad1dc84c92627414ce203c17fd8.ctex"]
+source_file="res://Textures/Ground058_4K-PNG/Ground058_PREVIEW.jpg"
+dest_files=["res://.godot/imported/Ground058_PREVIEW.jpg-1519c57cb43bad1522ca38d3cd9b922c.ctex"]
 
 [params]
 

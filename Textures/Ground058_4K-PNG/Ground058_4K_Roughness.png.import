@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2lecqyfwb15w"
-path="res://.godot/imported/Ground058_4K_Roughness.png-61c172d75697079389361bf7336d1866.ctex"
+path="res://.godot/imported/Ground058_4K_Roughness.png-70ec843215942dd35445389840299af3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ground058_4K-PNG/Ground058_4K_Roughness.png"
-dest_files=["res://.godot/imported/Ground058_4K_Roughness.png-61c172d75697079389361bf7336d1866.ctex"]
+source_file="res://Textures/Ground058_4K-PNG/Ground058_4K_Roughness.png"
+dest_files=["res://.godot/imported/Ground058_4K_Roughness.png-70ec843215942dd35445389840299af3.ctex"]
 
 [params]
 
