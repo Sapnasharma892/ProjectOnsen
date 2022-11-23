@@ -1,41 +1,53 @@
-[gd_scene load_steps=19 format=3 uid="uid://dcbi4epadbtf8"]
+[gd_scene load_steps=23 format=3 uid="uid://dcbi4epadbtf8"]
+
+[ext_resource type="ArrayMesh" path="res://onsen/3D_assets_Tres/Building_01/Building_01_mesh.tres" id="1_lb2ko"]
+[ext_resource type="Texture2D" path="res://Textures/Ground058_4K-PNG/Ground058_4K_Color.png" id="2_ef8v2"]
+[ext_resource type="ArrayMesh" path="res://onsen/3D_assets_Tres/Fence/Fence_corner_mesh.tres" id="2_x2804"]
+[ext_resource type="Texture2D" path="res://Textures/Gravel036L_4K-PNG/Gravel036L_4K_AmbientOcclusion.png" id="3_2t21j"]
+[ext_resource type="Texture2D" path="res://Textures/Gravel036L_4K-PNG/Gravel036L_4K_NormalDX.png" id="4_cb6el"]
+[ext_resource type="Texture2D" path="res://Textures/Gravel036L_4K-PNG/Gravel036L_4K_Roughness.png" id="5_5gsqq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drmo7"]
-albedo_color = Color(0.34902, 0.564706, 0.0470588, 1)
+ao_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_xlekj"]
 material = SubResource("StandardMaterial3D_drmo7")
-size = Vector3(15, 15, 15)
+size = Vector3(16.8, 15, 16.8)
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_rx6d8"]
+[sub_resource type="PrismMesh" id="PrismMesh_ys81a"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbydt"]
-albedo_color = Color(1, 0.321569, 1, 1)
+[sub_resource type="PrismMesh" id="PrismMesh_1ko32"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_bjeyc"]
-material = SubResource("StandardMaterial3D_gbydt")
-size = Vector2(12, 12)
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hcs8d"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_mye7o"]
-size = Vector3(5, 2, 2)
+[sub_resource type="BoxMesh" id="BoxMesh_r58m8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1g6hj"]
 albedo_color = Color(0.329412, 0.231373, 0.0156863, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_3m8l0"]
 material = SubResource("StandardMaterial3D_1g6hj")
+size = Vector3(2.4, 2.4, 0.6)
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_hcs8d"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbydt"]
+albedo_texture = ExtResource("2_ef8v2")
+albedo_texture_force_srgb = true
+metallic = 0.31
+metallic_specular = 0.76
+roughness_texture = ExtResource("5_5gsqq")
+normal_enabled = true
+normal_scale = 1.56
+normal_texture = ExtResource("4_cb6el")
+ao_enabled = true
+ao_texture = ExtResource("3_2t21j")
+heightmap_enabled = true
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_aa8gb"]
+[sub_resource type="PlaneMesh" id="PlaneMesh_bjeyc"]
+material = SubResource("StandardMaterial3D_gbydt")
+custom_aabb = AABB(0.181, 0, 0, 0.203, 0.061, 0)
+size = Vector2(12, 12)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_1pnjo"]
-
-[sub_resource type="PrismMesh" id="PrismMesh_ys81a"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_r58m8"]
-
-[sub_resource type="PrismMesh" id="PrismMesh_1ko32"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_8102o"]
 
@@ -45,6 +57,8 @@ material = SubResource("StandardMaterial3D_1g6hj")
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_2woop"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_aa8gb"]
+
 [node name="Node3d" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.50601, 0)
 
@@ -52,180 +66,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.50601, 0)
 transform = Transform3D(1, 0, 0, 0, 0.142113, 0, 0, 0, 1, 0.0125055, -1.59355, 0)
 mesh = SubResource("BoxMesh_xlekj")
 
-[node name="MeshInstance3d" type="MeshInstance3D" parent="Base"]
-transform = Transform3D(2.02353, 0.207877, 0.0244584, 0.0237794, 2.61362, -0.928387, -0.0739355, 6.52997, 0.370808, 0.0611286, 13.1833, 5.43258)
-mesh = SubResource("PlaneMesh_rx6d8")
-
-[node name="Midground" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.191904, -0.513864, 0)
-mesh = SubResource("PlaneMesh_bjeyc")
-
-[node name="House1" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.00965659, 0, -0.314904, 0, 0.452429, 0, 0.993293, 0, 0.00306143, 5.16829, -0.164994, 0)
-mesh = SubResource("BoxMesh_mye7o")
-
-[node name="HouseLeft" type="MeshInstance3D" parent="House1"]
-transform = Transform3D(0.0370274, 0, -0.316812, 0, 1, 0, 3.15211, 0, 0.0370274, 5.03868, 0, 15.6443)
-mesh = SubResource("BoxMesh_mye7o")
-skeleton = NodePath("../..")
-
-[node name="HouseRight" type="MeshInstance3D" parent="House1"]
-transform = Transform3D(-0.00846638, 0, -0.311934, 0, 1, 0, 2.07601, 0, -0.012657, -4.99314, 0, 12.7176)
-mesh = SubResource("BoxMesh_mye7o")
-skeleton = NodePath("../..")
-
-[node name="Fence7" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.287737, 0, 0, 0, 1, 0, 0, 0, 1.0045, -4.68261, -0.167991, 4.69169)
-mesh = SubResource("BoxMesh_3m8l0")
-
-[node name="Fence6" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.56731, 34.3478, 0, -8.40605)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Fence5" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.56731, -0.457985, 0, -8.40605)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Fence4" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(-4.37114e-08, 0, 8.96255, 0, 1, 0, -0.286449, 0, -1.12221e-07, 30.357, 0, -9.54339)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Fence3" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(-4.37114e-08, 0, 14.8543, 0, 1, 0, -0.286449, 0, -1.85992e-07, 7.05061, 0, -9.54339)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Fence2" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(-4.37114e-08, 0, 8.96255, 0, 1, 0, -0.286449, 0, -1.12221e-07, 30.357, 4.76837e-07, 0.202695)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Fence" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(-4.37114e-08, 0, 8.96255, 0, 1, 0, -0.286449, 0, -1.12221e-07, 4.29346, 0, 0.420212)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Fence8" type="MeshInstance3D" parent="Fence7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.56731, 34.3478, 0, -0.937499)
-mesh = SubResource("BoxMesh_3m8l0")
-skeleton = NodePath("../..")
-
-[node name="Rock" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.38241, 0, 0, 0, 1, -4.58788, -0.59892, 3.52563)
-mesh = SubResource("CapsuleMesh_hcs8d")
-
-[node name="Rock3" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.210643, -1.0536)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock4" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.928281, -1.63915)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock5" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13686, -2.3856)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock6" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05522, -2.9797)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock7" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.213911, -3.77929)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock8" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17089, -4.48852)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock9" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.187512, -4.9719)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock10" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12319, -5.67946)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock11" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0947781, -6.07299)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="Rock2" type="MeshInstance3D" parent="Rock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.782095, -0.362698)
-mesh = SubResource("CapsuleMesh_hcs8d")
-skeleton = NodePath("../..")
-
-[node name="tree" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.59268, 0, 0, 0, 1.15665, 0, 0, 0, 0.522388, 3.21626, 0.613724, 5.33499)
-mesh = SubResource("CapsuleMesh_aa8gb")
-
-[node name="tree2" type="MeshInstance3D" parent="tree"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.11211, -0.114269, -20.9007)
-mesh = SubResource("CapsuleMesh_aa8gb")
-skeleton = NodePath("../..")
-
-[node name="tree3" type="MeshInstance3D" parent="tree"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.32792, -0.114269, -21.0031)
-mesh = SubResource("CapsuleMesh_aa8gb")
-skeleton = NodePath("../..")
-
-[node name="tree4" type="MeshInstance3D" parent="tree"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4109, -0.114269, 0.545189)
-mesh = SubResource("CapsuleMesh_aa8gb")
-skeleton = NodePath("../..")
-
-[node name="woodtub" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598245, 0, 0, 0, 0.211107, 0, 0, 0, 0.73456, 6.04153, -0.326565, -0.596168)
-mesh = SubResource("CylinderMesh_1pnjo")
-
-[node name="woodtub2" type="MeshInstance3D" parent="woodtub"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.2436, 0, 6.3535)
-mesh = SubResource("CylinderMesh_1pnjo")
-skeleton = NodePath("../..")
-
-[node name="woodtub6" type="MeshInstance3D" parent="woodtub"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3057, 0, 7.11118)
-mesh = SubResource("CylinderMesh_1pnjo")
-skeleton = NodePath("../..")
-
-[node name="woodtub3" type="MeshInstance3D" parent="woodtub"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.3332, 0, -4.48502)
-mesh = SubResource("CylinderMesh_1pnjo")
-skeleton = NodePath("../..")
-
-[node name="woodtub4" type="MeshInstance3D" parent="woodtub"]
-transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -3.20542, 0, 4.13628)
-mesh = SubResource("CylinderMesh_1pnjo")
-skeleton = NodePath("../..")
-
-[node name="woodtub5" type="MeshInstance3D" parent="woodtub"]
-transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -6.8146, -0.0428114, 6.48645)
-mesh = SubResource("CylinderMesh_1pnjo")
-skeleton = NodePath("../..")
+[node name="Base2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.142113, 0, 0, 0, 1, 0.0125055, -1.59355, 0)
+mesh = SubResource("BoxMesh_xlekj")
 
 [node name="Nameplate" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.015836, 0, -0.211304, 0, 1, 0, 0.987222, 0, 0.00338951, 6.22767, 1.70623, 5.47038)
+transform = Transform3D(0.015836, 0, -0.211304, 0, 1, 0, 0.987222, 0, 0.00338951, 7.84585, 1.70623, 5.47038)
 mesh = SubResource("PrismMesh_ys81a")
 
-[node name="Nameplatewood" type="MeshInstance3D" parent="Nameplate"]
-transform = Transform3D(0.00530137, 0, 0.320508, 0, 2.43683, 0, -1.54407, 0, 0.0240202, 0.0361023, -1.70623, 0.0518093)
-mesh = SubResource("BoxMesh_r58m8")
-skeleton = NodePath("../..")
-
 [node name="smallhut" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.0233577, 0, -0.336515, 0, 1.78358, 0, 0.982413, 0, 0.00800092, 6.3678, 0, 2.0821)
+transform = Transform3D(0.0233577, 0, -0.336515, 0, 1.78358, 0, 0.982413, 0, 0.00800092, 7.93138, 0, 1.80883)
 mesh = SubResource("PrismMesh_1ko32")
 
 [node name="smallhut2" type="MeshInstance3D" parent="smallhut"]
@@ -234,7 +84,7 @@ mesh = SubResource("PrismMesh_1ko32")
 skeleton = NodePath("../..")
 
 [node name="Rock12" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.38241, 0, 0, 0, 1, -3.38907, -0.665157, 0.269701)
+transform = Transform3D(1, 0, 0, 0, 0.38241, 0, 0, 0, 1, -4.27966, -0.665157, 0.269701)
 mesh = SubResource("CapsuleMesh_hcs8d")
 
 [node name="Rock13" type="MeshInstance3D" parent="Rock12"]
@@ -293,27 +143,27 @@ mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
 [node name="Rock29" type="MeshInstance3D" parent="Rock12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.11313, 0, -1.71033)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09628, 0.0291209, -2.79008)
 mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
 [node name="Rock30" type="MeshInstance3D" parent="Rock12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.89723, 0, -1.21314)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.36212, 0, -2.533)
 mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
 [node name="Rock31" type="MeshInstance3D" parent="Rock12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.42699, 0, -0.667681)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.42699, 0, -3.0199)
 mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
 [node name="Rock32" type="MeshInstance3D" parent="Rock12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09862, 0, -0.237145)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09862, 0, -3.23213)
 mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
 [node name="Rock33" type="MeshInstance3D" parent="Rock12"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.81072, 0, -0.237145)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.81072, 0, -3.23567)
 mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
@@ -342,22 +192,168 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.78021, -0.37146, 4.19638)
 mesh = SubResource("CapsuleMesh_hcs8d")
 skeleton = NodePath("../..")
 
-[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.620736, 0, 0.365036, 0, 1.68556, 0, -0.425377, 0, 0.532683, -1.06464, 0.14256, -4.16508)
+[node name="House1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00363035, 0, 0.999993, 0, 1, 0, -0.999993, 0, 0.00363035, 5.00059, -0.472389, -0.744478)
+mesh = ExtResource("1_lb2ko")
+
+[node name="Nameplatewood" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.326352, 0, 1.86265e-09, 0, 2.43683, 0, -1.16415e-08, 0, 0.316494, 7.78231, 0, 5.5062)
+mesh = SubResource("BoxMesh_r58m8")
+
+[node name="Fence" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.25774e-08, 0, 2.57886, 0, 1, 0, -0.287738, 0, -1.12726e-07, -5.19103, -0.167991, 5.84802)
+mesh = SubResource("BoxMesh_3m8l0")
+
+[node name="Midground" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-1.51915e-07, 0, -3.47538, 0, 1, 0, 0.387769, 0, -1.69498e-08, 20.3241, -0.345873, 1.63622)
+mesh = SubResource("PlaneMesh_bjeyc")
+skeleton = NodePath("../..")
+
+[node name="woodtub" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-9.08821e-08, 0, -2.55288, 0, 0.211107, 0, 0.231981, 0, -1.24507e-08, 22.396, -0.158574, 5.06485)
+mesh = SubResource("CylinderMesh_1pnjo")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(1.47835, 0, -1.85128, 0, 1.68556, 0, 0.240702, 0, 0.141549, 34.7994, 0.310551, 1.25474)
 mesh = SubResource("BoxMesh_8102o")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3d2" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-6.39944e-08, 0, -0.992205, 0, 0.208574, 0, 0.163349, 0, -4.8391e-09, 4.84336, -0.254865, 2.16217)
+mesh = SubResource("CapsuleMesh_5xrct")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3d3" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-6.39944e-08, 0, -0.992205, 0, 0.208574, 0, 0.163349, 0, -4.8391e-09, 4.84336, -0.254865, 1.96188)
+mesh = SubResource("CapsuleMesh_5xrct")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3d4" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-6.57404e-08, 0, -1.70978, 0, 0.110095, 0, 0.167805, 0, -8.3388e-09, 5.22912, -0.276331, 1.73569)
+mesh = SubResource("CylinderMesh_dt5n6")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3d5" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-3.84801e-08, 0, -0.985932, 0, 0.39969, 0, 0.0982222, 0, -4.8085e-09, 31.5459, 0.0303838, 3.80081)
+mesh = SubResource("CylinderMesh_2woop")
+skeleton = NodePath("../..")
+
+[node name="Rock" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-1.51915e-07, 0, -3.47538, 0, 0.38241, 0, 0.387769, 0, -1.69498e-08, 8.07119, -0.430928, -0.111457)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../..")
+
+[node name="Rock3" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.210643, -1.0536)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock4" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.928281, -1.63915)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock5" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13686, -2.3856)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock6" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05522, -2.9797)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock7" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.213911, -3.77929)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock8" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17089, -4.48852)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock9" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.187512, -4.9719)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock10" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12319, -5.67946)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock11" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0947781, -6.07299)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="Rock2" type="MeshInstance3D" parent="Fence/Rock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.782095, -0.362698)
+mesh = SubResource("CapsuleMesh_hcs8d")
+skeleton = NodePath("../../..")
+
+[node name="tree" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-9.00367e-08, 0, -1.8155, 0, 1.15665, 0, 0.229823, 0, -8.85439e-09, -4.29863, 0.781715, 2.91474)
+mesh = SubResource("CapsuleMesh_aa8gb")
+skeleton = NodePath("../..")
+
+[node name="HouseLeft" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(0.0418931, 0, 0.999122, 0, 1, 0, -0.999122, 0, 0.0418931, -0.053278, 0, 1.27068)
+skeleton = NodePath("../..")
+
+[node name="HouseRight" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(0.00713866, 0, 1.07695, 0, 0.452429, 0, -0.253533, 0, 0.000377506, 39.7761, 0.00299692, 3.246)
+skeleton = NodePath("../..")
+
+[node name="tree2" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-9.00367e-08, 0, -1.8155, 0, 1.15665, 0, 0.229823, 0, -8.8544e-09, 35.5321, 0.649546, 4.89568)
+mesh = SubResource("CapsuleMesh_aa8gb")
+skeleton = NodePath("../..")
+
+[node name="tree3" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-9.00367e-08, 0, -1.8155, 0, 1.15665, 0, 0.229823, 0, -8.8544e-09, 42.5118, 0.649546, 1.34614)
+mesh = SubResource("CapsuleMesh_aa8gb")
+skeleton = NodePath("../..")
+
+[node name="tree4" type="MeshInstance3D" parent="Fence"]
+transform = Transform3D(-9.00367e-08, 0, -1.8155, 0, 1.15665, 0, 0.229823, 0, -8.8544e-09, -5.28842, 0.649546, 0.867423)
+mesh = SubResource("CapsuleMesh_aa8gb")
+skeleton = NodePath("../..")
+
+[node name="woodtub2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, -1.84716, -0.326565, 4.07086)
+mesh = SubResource("CylinderMesh_1pnjo")
+
+[node name="woodtub6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, -0.687825, -0.326565, 4.62742)
+mesh = SubResource("CylinderMesh_1pnjo")
+
+[node name="woodtub3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, -0.106031, -0.326565, -3.89068)
+mesh = SubResource("CylinderMesh_1pnjo")
+
+[node name="woodtub4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, 3.52332, -0.326565, 1.59216)
+mesh = SubResource("CylinderMesh_1pnjo")
+
+[node name="woodtub5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211106, 0, 0, 0, 0.73456, 3.79369, -0.335603, 4.16852)
+mesh = SubResource("CylinderMesh_1pnjo")
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81079, -0.523569, -5.8367)
+mesh = ExtResource("2_x2804")
 
 [node name="MeshInstance3d2" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.421253, 0, 0, 0, 0.208574, 0, 0, 0, 0.285495, 1.27548, -0.422856, 4.4544)
-mesh = SubResource("CapsuleMesh_5xrct")
+transform = Transform3D(0.0264386, 0, 0.99965, 0, 1, 0, -0.99965, 0, 0.0264386, -6.8029, -0.523569, -5.77097)
+mesh = ExtResource("2_x2804")
 
 [node name="MeshInstance3d3" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.421253, 0, 0, 0, 0.208574, 0, 0, 0, 0.285495, 0.758963, -0.422856, 4.4544)
-mesh = SubResource("CapsuleMesh_5xrct")
+transform = Transform3D(-0.999959, -0.00468767, 0.00776999, -0.00492795, 0.999501, -0.0311984, -0.00761987, -0.0312354, -0.999483, -6.75098, -0.532206, 5.84664)
+mesh = ExtResource("2_x2804")
 
 [node name="MeshInstance3d4" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.432746, 0, 0, 0, 0.110095, 0, 0, 0, 0.491969, 0.175663, -0.444322, 4.3434)
-mesh = SubResource("CylinderMesh_dt5n6")
-
-[node name="MeshInstance3d5" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.253301, 0, 0, 0, 0.39969, 0, 0, 0, 0.28369, 5.50131, -0.137607, -3.22894)
-mesh = SubResource("CylinderMesh_2woop")
+transform = Transform3D(-0.0865322, -0.00468767, -0.996238, 0.0307132, 0.999501, -0.00737074, 0.995775, -0.0312354, -0.0863451, 4.81602, -0.488337, 5.9274)
+mesh = ExtResource("2_x2804")
