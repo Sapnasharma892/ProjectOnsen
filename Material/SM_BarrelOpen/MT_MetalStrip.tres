@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bmrwq76ixu68p"]
+
+[resource]
+resource_name = "MT_MetalStrip"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.160784, 0.188235, 0.12549, 1)
+roughness = 0.5

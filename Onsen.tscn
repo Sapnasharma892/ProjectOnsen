@@ -1,13 +1,18 @@
-[gd_scene load_steps=22 format=3 uid="uid://dcbi4epadbtf8"]
+[gd_scene load_steps=24 format=3 uid="uid://dcbi4epadbtf8"]
 
+[ext_resource type="ArrayMesh" uid="uid://dmm0kvji4c4je" path="res://TRES/AddressBoard/SM_AdressBoard.tres" id="1_1ajja"]
 [ext_resource type="ArrayMesh" uid="uid://c0wact2rt2652" path="res://TRES/Building_01/Building_01_mesh.tres" id="1_kuliv"]
 [ext_resource type="Texture2D" uid="uid://chhrsb14oxj4c" path="res://Textures/Ground058_4K-PNG/Ground058_4K_Color.png" id="2_ef8v2"]
 [ext_resource type="ArrayMesh" uid="uid://blhonbdlngcll" path="res://TRES/Fence/Fence_Corner_n.tres" id="2_x1377"]
+[ext_resource type="ArrayMesh" uid="uid://bfuqs4n1buxq4" path="res://TRES/SM_BarrelOpen/SM_BarrelOpen.tres" id="3_0hl4s"]
 [ext_resource type="Texture2D" uid="uid://d2rtgf5akeopm" path="res://Textures/Gravel036L_4K-PNG/Gravel036L_4K_AmbientOcclusion.png" id="3_2t21j"]
 [ext_resource type="ArrayMesh" uid="uid://13lkrbo302uk" path="res://TRES/Fence/Fence_Middle_n_mesh.tres" id="3_svwi1"]
 [ext_resource type="Texture2D" uid="uid://buhlyxe7xij8m" path="res://Textures/Gravel036L_4K-PNG/Gravel036L_4K_NormalDX.png" id="4_cb6el"]
+[ext_resource type="ArrayMesh" uid="uid://vny5l1oufah7" path="res://TRES/SM_Barrel/SM_Barrel.tres" id="4_j2rq1"]
 [ext_resource type="ArrayMesh" uid="uid://cydfm7n08iiuj" path="res://TRES/Fence/Fence_end_n_.tres" id="4_xlcuh"]
 [ext_resource type="Texture2D" uid="uid://carrnx7w7jmnt" path="res://Textures/Gravel036L_4K-PNG/Gravel036L_4K_Roughness.png" id="5_5gsqq"]
+[ext_resource type="ArrayMesh" uid="uid://b8voeb1p2dsiw" path="res://TRES/SM_BarrelSmall/SM_BarrelSmall.tres" id="12_mw0b7"]
+[ext_resource type="ArrayMesh" uid="uid://bkhnbuf5ibbkf" path="res://TRES/SM_BarrelSmallOpen/SM_Barrelssmallopen.tres" id="13_jvppi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drmo7"]
 albedo_color = Color(1, 0.392157, 1, 1)
@@ -16,8 +21,6 @@ ao_enabled = true
 [sub_resource type="BoxMesh" id="BoxMesh_xlekj"]
 material = SubResource("StandardMaterial3D_drmo7")
 size = Vector3(16.8, 15, 16.8)
-
-[sub_resource type="PrismMesh" id="PrismMesh_ys81a"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_1ko32"]
 
@@ -46,10 +49,6 @@ size = Vector2(12, 12)
 
 [sub_resource type="BoxMesh" id="BoxMesh_8102o"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_5xrct"]
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_dt5n6"]
-
 [sub_resource type="CylinderMesh" id="CylinderMesh_2woop"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_aa8gb"]
@@ -62,8 +61,8 @@ transform = Transform3D(1, 0, 0, 0, 0.142113, 0, 0, 0, 1, -0.0360617, -1.74299, 
 mesh = SubResource("BoxMesh_xlekj")
 
 [node name="Nameplate" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.015836, 0, -0.211304, 0, 1, 0, 0.987222, 0, 0.00338951, 7.84585, 1.70623, 5.47038)
-mesh = SubResource("PrismMesh_ys81a")
+transform = Transform3D(-4.31584e-08, 0, 0.211331, 0, 1, 0, -0.987349, 0, -9.23758e-09, 7.84585, -0.514825, 5.47038)
+mesh = ExtResource("1_1ajja")
 
 [node name="smallhut" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.0233577, 0, -0.336515, 0, 1.78358, 0, 0.982413, 0, 0.00800092, 7.93138, 0, 1.80883)
@@ -90,25 +89,25 @@ mesh = ExtResource("1_kuliv")
 transform = Transform3D(0.999316, 0, 0.036975, 0, 1, 0, -0.036975, 0, 0.999316, 0.109342, -0.623008, 5.69114)
 mesh = ExtResource("1_kuliv")
 
-[node name="woodtub2" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, 2.12669, -0.326565, 3.50673)
-mesh = SubResource("CylinderMesh_1pnjo")
+[node name="SM_BarrelOpen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18066, -0.705192, 3.29341)
+mesh = ExtResource("3_0hl4s")
+
+[node name="SM_BarrelOpen2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.87101, -0.705192, 3.62359)
+mesh = ExtResource("3_0hl4s")
 
 [node name="woodtub6" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, -3.47828, -0.326565, 4.54361)
+transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, -3.47828, -0.424294, 4.54361)
 mesh = SubResource("CylinderMesh_1pnjo")
 
-[node name="woodtub3" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, 2.21214, -0.326565, -3.89068)
-mesh = SubResource("CylinderMesh_1pnjo")
+[node name="SM_BarrelOpen4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.93141, -0.750944, -3.44149)
+mesh = ExtResource("3_0hl4s")
 
-[node name="woodtub4" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211107, 0, 0, 0, 0.73456, 3.52332, -0.326565, 1.59216)
-mesh = SubResource("CylinderMesh_1pnjo")
-
-[node name="woodtub5" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598245, 0, -3.55271e-15, 0, 0.211106, 0, 0, 0, 0.73456, 3.79369, -0.335603, 4.16852)
-mesh = SubResource("CylinderMesh_1pnjo")
+[node name="SM_Barrel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06823, -0.326565, 1.01485)
+mesh = ExtResource("4_j2rq1")
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81079, -0.523569, -5.8367)
@@ -315,25 +314,25 @@ mesh = SubResource("CapsuleMesh_hcs8d")
 transform = Transform3D(1, 0, 8.17124e-14, 0, 1, 0, 6.75016e-14, 0, 0.999999, -0.971448, -0.631126, 0.0553064)
 mesh = SubResource("PlaneMesh_bjeyc")
 
-[node name="woodtub" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.598247, 0, -2.13163e-14, 0, 0.211107, 0, -5.68434e-14, 0, 0.734561, 7.87051, -0.326565, -0.540858)
-mesh = SubResource("CylinderMesh_1pnjo")
+[node name="SM_BarrelOpen3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 9.50166e-14, 0, 1, 0, -9.50166e-14, 0, 1, 7.38046, -0.666366, -0.0276887)
+mesh = ExtResource("3_0hl4s")
 
 [node name="MeshInstance3d2" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.620737, 0, 0.365035, 0, 1.68556, 0, -0.425378, 0, 0.532684, -3.75033, 0.14256, -4.67087)
 mesh = SubResource("BoxMesh_8102o")
 
-[node name="MeshInstance3d3" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.421254, 0, -1.77636e-15, 0, 0.208574, 0, -5.68434e-14, 0, 0.285495, 1.34191, -0.422856, 3.43773)
-mesh = SubResource("CapsuleMesh_5xrct")
+[node name="SM_BarrelSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 1.34939e-13, 0, 1, 0, -1.34939e-13, 0, 1, 1.3352, -0.658974, 3.43773)
+mesh = ExtResource("12_mw0b7")
 
-[node name="MeshInstance3d4" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.421254, 0, -1.77636e-15, 0, 0.208574, 0, -5.68434e-14, 0, 0.285495, -0.131618, -0.422856, 3.42695)
-mesh = SubResource("CapsuleMesh_5xrct")
+[node name="SM_BarrelSmall2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 1.34939e-13, 0, 1, 0, -1.34939e-13, 0, 1, 0.736827, -0.624612, 3.42695)
+mesh = ExtResource("12_mw0b7")
 
-[node name="MeshInstance3d5" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.432746, 0, -1.06581e-14, 0, 0.110095, 0, 2.66454e-14, 0, 0.491969, -0.837244, -0.444322, 3.46508)
-mesh = SubResource("CylinderMesh_dt5n6")
+[node name="SM_BarrelSmallOpen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -6.15728e-14, 0, 1, 0, 6.15728e-14, 0, 1, 0.00149018, -0.657406, 3.46508)
+mesh = ExtResource("13_jvppi")
 
 [node name="MeshInstance3d6" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.253301, 0, 1.5099e-14, 0, 0.39969, 0, -8.88178e-15, 0, 0.28369, 3.10144, -0.137607, -3.17363)
