@@ -94,7 +94,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18066, -0.705192, 3.29341)
 mesh = ExtResource("3_0hl4s")
 
 [node name="SM_BarrelOpen2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.28642, -0.705192, 3.62359)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.28642, -0.711929, 3.95817)
 mesh = ExtResource("3_0hl4s")
 
 [node name="woodtub6" type="MeshInstance3D" parent="."]
@@ -106,7 +106,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.93141, -0.750944, -3.44149)
 mesh = ExtResource("3_0hl4s")
 
 [node name="SM_Barrel" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06823, -0.326565, 1.01485)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62312, -0.326565, 1.01485)
+mesh = ExtResource("4_j2rq1")
+
+[node name="SM_Barrel2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.03497, -1.12789, -4.48251)
 mesh = ExtResource("4_j2rq1")
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
