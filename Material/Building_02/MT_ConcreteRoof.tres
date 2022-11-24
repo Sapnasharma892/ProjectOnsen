@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c55suod327wk3"]
+
+[resource]
+resource_name = "MT_ConcreteRoof"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.321569, 0.356863, 0.294118, 1)
+roughness = 0.92638
