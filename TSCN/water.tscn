@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://i7pqyl2dcob8"]
+
+[ext_resource type="Texture2D" uid="uid://cjhfkafva12kh" path="res://Textures/water/Foam.png" id="1_6fgae"]
+[ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/water/Water_N_A.png" id="2_gitlb"]
+[ext_resource type="Texture2D" uid="uid://dvbquy25uq4dk" path="res://Textures/water/Water_N_B.png" id="3_cm8cv"]
+[ext_resource type="Shader" path="res://watershader.gdshader" id="4_25t75"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ylnww"]
+render_priority = 0
+shader = ExtResource("4_25t75")
+wave_speed = null
+wave_c = Vector4(0.1, 0, 0.1, 0.5)
+wave_b = Vector4(0.1, 0.6, 0.3, 0.5)
+wave_a = Vector4(0.1, 0.1, 0.2, 0.5)
+uv_sampler_strength = 3.781
+uv_sampler_scale = Vector2(-0.991, -0.817)
+sampler_scale = Vector2(0.436, 0.3)
+sampler_direction = Vector2(-0.03, -0.001)
+refraction = -0.42
+projector = null
+normalmap_b_sampler = ExtResource("3_cm8cv")
+normalmap_a_sampler = ExtResource("2_gitlb")
+foam_sampler = ExtResource("1_6fgae")
+foam_level = -0.111
+depth_offset = 0.107
+color_shallow = Color(0.0470588, 0.415686, 0.356863, 1)
+color_deep = Color(0.168627, 0.415686, 0.498039, 1)
+beers_law = null
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gob76"]
+material = SubResource("ShaderMaterial_ylnww")
+
+[node name="Node3d" type="Node3D"]
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_gob76")

@@ -316,7 +316,7 @@ transform = Transform3D(1, 0, 0, 0, 0.38241, 0, 0, 0, 1, -2.38629, -0.66088, 3.9
 mesh = SubResource("CapsuleMesh_hcs8d")
 
 [node name="Midground" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 8.17124e-14, 0, 1, 0, 6.75016e-14, 0, 0.999999, -0.971448, -0.631126, 0.0553064)
+transform = Transform3D(1, 0, 8.17124e-14, 0, 1, 0, 6.75016e-14, 0, 0.999999, -0.971448, -0.576533, 0.0553064)
 mesh = SubResource("PlaneMesh_bjeyc")
 
 [node name="SM_BarrelOpen3" type="MeshInstance3D" parent="."]
