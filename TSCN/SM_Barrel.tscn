@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://g1b1yx1rmbj6"]
+
+[ext_resource type="ArrayMesh" uid="uid://vny5l1oufah7" path="res://TRES/SM_Barrel/SM_Barrel.tres" id="1_irx52"]
+
+[node name="Node3d" type="Node3D"]
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_irx52")

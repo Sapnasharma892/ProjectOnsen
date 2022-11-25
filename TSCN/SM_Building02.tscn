@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dop8wthrurunm"]
+
+[ext_resource type="ArrayMesh" uid="uid://dgb1mp8de0iq3" path="res://TRES/Building02/SM_Building2.tres" id="1_mb8r5"]
+
+[node name="Node3d" type="Node3D"]
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_mb8r5")
