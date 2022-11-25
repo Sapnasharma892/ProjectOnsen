@@ -1,15 +1,19 @@
-[gd_scene load_steps=18 format=3 uid="uid://d0fjk4m6q7upa"]
+[gd_scene load_steps=22 format=3 uid="uid://d0fjk4m6q7upa"]
 
 [ext_resource type="ArrayMesh" uid="uid://dmm0kvji4c4je" path="res://TRES/AddressBoard/SM_AdressBoard.tres" id="1_1ajja"]
 [ext_resource type="PackedScene" uid="uid://ck68ugdfyi60d" path="res://TSCN/Building_01.tscn" id="2_br2l0"]
 [ext_resource type="ArrayMesh" uid="uid://bfuqs4n1buxq4" path="res://TRES/SM_BarrelOpen/SM_BarrelOpen.tres" id="3_0hl4s"]
-[ext_resource type="MeshLibrary" uid="uid://b3tfhay7gi828" path="res://Mesh/FenceCorner.meshlib" id="4_k0g4s"]
 [ext_resource type="MeshLibrary" uid="uid://cwrn2fdljcro2" path="res://Mesh/FenceMiddle.meshlib" id="5_vo33d"]
 [ext_resource type="PackedScene" uid="uid://g1b1yx1rmbj6" path="res://TSCN/SM_Barrel.tscn" id="6_xbbiq"]
 [ext_resource type="PackedScene" uid="uid://dipak8hfflnoo" path="res://TSCN/SM_BarrelOpen.tscn" id="7_65epl"]
 [ext_resource type="PackedScene" uid="uid://cycjnjiogd8tk" path="res://TSCN/SM_BarrelOpneSmall.tscn" id="8_k7mjc"]
 [ext_resource type="PackedScene" uid="uid://bi1euew7dyi26" path="res://TSCN/SM_BarrelSmall.tscn" id="9_th3vk"]
+[ext_resource type="PackedScene" uid="uid://dtxthf38kyobp" path="res://TSCN/SM_Stone01.tscn" id="10_j0wgc"]
 [ext_resource type="PackedScene" uid="uid://dop8wthrurunm" path="res://TSCN/SM_Building02.tscn" id="10_v8igq"]
+[ext_resource type="PackedScene" uid="uid://bainxa266kinw" path="res://TSCN/SM_Stone04.tscn" id="11_ambao"]
+[ext_resource type="PackedScene" uid="uid://dlh4vqgsbtsra" path="res://TSCN/SM_Stone03.tscn" id="12_ehy0m"]
+[ext_resource type="PackedScene" uid="uid://5j2227nx43yk" path="res://TSCN/SM_Stone05.tscn" id="13_napj8"]
+[ext_resource type="MeshLibrary" uid="uid://dffovatcinqbg" path="res://Mesh/FenceEnd.meshlib" id="14_hjmgd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drmo7"]
 albedo_color = Color(1, 0.392157, 1, 1)
@@ -89,19 +93,11 @@ transform = Transform3D(-2.5766, 0, 0.108036, 0, 1, 0, -0.0120541, 0, -0.287485,
 [node name="HouseRight" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.653826, 0, 0.000973522, 0, 0.452429, 0, -0.00205404, 0, -0.309879, 3.17995, -0.164994, -5.54177)
 
-[node name="GridMap" type="GridMap" parent="."]
-mesh_library = ExtResource("4_k0g4s")
-cell_size = Vector3(0.737, 0.1, 0.1)
-data = {
-"cells": PackedInt32Array(-524356, 59, 655360, -524357, 65478, 1048576, -589818, 65477, 0)
-}
-metadata/_editor_floor_ = Vector3(0, -9, 0)
-
 [node name="GridMap2" type="GridMap" parent="."]
 mesh_library = ExtResource("5_vo33d")
 cell_size = Vector3(0.76, 0.1, 0.604)
 data = {
-"cells": PackedInt32Array(-589819, 65526, 0, -589820, 65526, 0, -589821, 65526, 0, -524296, 65526, 0, -524295, 65526, 0, -524294, 65526, 0, -524293, 65526, 0, -524292, 9, 0, -524293, 9, 0, -524294, 9, 0, -524295, 9, 0, -524296, 9, 0, -589818, 5, 1048576, -589818, 6, 1048576, -589818, 7, 1048576, -589818, 8, 1048576)
+"cells": PackedInt32Array(-589819, 65526, 0, -589820, 65526, 0, -589821, 65526, 0, -524296, 65526, 0, -524295, 65526, 0, -524294, 65526, 0, -524293, 65526, 0, -524292, 9, 0, -524293, 9, 0, -524294, 9, 0, -524295, 9, 0, -524296, 9, 0, -589818, 5, 1048576, -589818, 6, 1048576, -589818, 7, 1048576, -589818, 8, 1048576, -524297, 8, 1048576, -524297, 7, 1048576, -524297, 65528, 1048576, -524297, 65527, 1048576, -524297, 65529, 1048576)
 }
 metadata/_editor_floor_ = Vector3(0, -9, 0)
 
@@ -112,13 +108,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62699, -0.788729, 1.0762)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.12772, -0.788729, -4.42026)
 
 [node name="SM_BarrelOpen5" parent="." instance=ExtResource("7_65epl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.857492, -0.717692, -3.21737)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56285, -0.717692, -3.71096)
 
 [node name="SM_BarrelOpen7" parent="." instance=ExtResource("7_65epl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.99879, -0.717692, 3.81566)
 
 [node name="SM_BarrelOpen6" parent="." instance=ExtResource("7_65epl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.61644, -0.772676, 4.71888)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.47739, -0.772676, 4.71888)
 
 [node name="SM_Barrelsmallopen" parent="." instance=ExtResource("8_k7mjc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.750944, -0.800674, 3.92802)
@@ -134,3 +130,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.750485, -5.7652)
 
 [node name="SM_Building03" parent="." instance=ExtResource("10_v8igq")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.750485, 5.78597)
+
+[node name="SM_Stone01" parent="." instance=ExtResource("10_j0wgc")]
+transform = Transform3D(0.387821, 0, -0.921735, 0, 1, 0, 0.921735, 0, 0.387821, -6.92967, -0.96075, 2.40022)
+
+[node name="SM_Stone10" parent="." instance=ExtResource("10_j0wgc")]
+transform = Transform3D(-0.0238564, 0, -0.999715, 0, 1, 0, 0.999715, 0, -0.0238564, -6.61797, 0.247671, 2.40022)
+
+[node name="SM_Stone02" parent="." instance=ExtResource("10_j0wgc")]
+transform = Transform3D(-0.261567, 0.00698728, 0.96516, -0.0678358, 0.997368, -0.0256046, -0.962799, -0.0721697, -0.260405, -6.39075, -0.943186, 0.883945)
+
+[node name="SM_Stone03" parent="." instance=ExtResource("11_ambao")]
+transform = Transform3D(-0.0864597, 0.000435741, -0.996255, 0.00239761, 0.999997, 0.000229301, 0.996252, -0.00236881, -0.0864605, -6.53432, -1.12464, -1.51755)
+
+[node name="SM_Stone04" parent="." instance=ExtResource("12_ehy0m")]
+transform = Transform3D(-8.73049e-05, 0, -1, 0, 1, 0, 1, 0, -8.73049e-05, -6.62265, 0, 2.41209)
+
+[node name="SM_Stone09" parent="." instance=ExtResource("12_ehy0m")]
+transform = Transform3D(-8.73049e-05, 0, -1, -0.0425732, 0.999093, 3.71685e-06, 0.999093, 0.0425732, -8.72258e-05, -6.26411, 0.607658, 0.165403)
+
+[node name="SM_Stone07" parent="." instance=ExtResource("12_ehy0m")]
+transform = Transform3D(0.0626513, 0, 0.998035, -0.110557, 0.993846, 0.00694021, -0.991893, -0.110775, 0.0622657, -6.42893, 0.00877833, -1.76808)
+
+[node name="SM_Stone05" parent="." instance=ExtResource("11_ambao")]
+transform = Transform3D(0.00413642, 0, -0.999991, 0, 1, 0, 0.999991, 0, 0.00413642, -6.13725, -0.279532, 0)
+
+[node name="SM_Stone08" parent="." instance=ExtResource("11_ambao")]
+transform = Transform3D(0.156004, 0, -0.987757, -0.0372804, 0.999287, -0.00588796, 0.987053, 0.0377425, 0.155892, -6.38127, 0.341368, -1.58129)
+
+[node name="SM_Stone06" parent="." instance=ExtResource("13_napj8")]
+transform = Transform3D(0.166562, 0, -0.986031, 0, 1, 0, 0.986031, 0, 0.166562, -6.50018, 1.14368, 0.182469)
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("14_hjmgd")
+cell_size = Vector3(0.76, 0.1, 0.1)
+data = {
+"cells": PackedInt32Array(-524353, 38, 1048576, -524297, 65502, 1441792, -524297, 40, 1048576)
+}
+metadata/_editor_floor_ = Vector3(0, -9, 0)
