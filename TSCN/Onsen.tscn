@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://d0fjk4m6q7upa"]
+[gd_scene load_steps=20 format=3 uid="uid://d0fjk4m6q7upa"]
 
 [ext_resource type="ArrayMesh" uid="uid://dmm0kvji4c4je" path="res://TRES/AddressBoard/SM_AdressBoard.tres" id="1_1ajja"]
 [ext_resource type="PackedScene" uid="uid://ck68ugdfyi60d" path="res://TSCN/Building_01.tscn" id="2_br2l0"]
@@ -10,6 +10,7 @@
 [ext_resource type="MeshLibrary" uid="uid://52h68i2cbr65" path="res://Mesh/SM_Stone.meshlib" id="10_c5hk8"]
 [ext_resource type="PackedScene" uid="uid://dop8wthrurunm" path="res://TSCN/SM_Building02.tscn" id="10_v8igq"]
 [ext_resource type="PackedScene" uid="uid://tvh7d0m5srtv" path="res://Shader/plane water.tscn" id="11_l8lpv"]
+[ext_resource type="PackedScene" uid="uid://ck4eukt3okumg" path="res://TSCN/SM_Tree.tscn" id="12_t0e43"]
 [ext_resource type="MeshLibrary" uid="uid://bohjxbuf2pfdd" path="res://Mesh/1Fence.meshlib" id="13_u1tyv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drmo7"]
@@ -136,5 +137,11 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, -9, 0)
 
-[node name="Node3D" parent="." instance=ExtResource("11_l8lpv")]
+[node name="Water" parent="." instance=ExtResource("11_l8lpv")]
 transform = Transform3D(-0.99982, 0, 0.0189706, 0, 1, 0, -0.0189706, 0, -0.99982, -5.53004, -0.726072, -0.14894)
+
+[node name="Tree" parent="." instance=ExtResource("12_t0e43")]
+transform = Transform3D(0.473, 0, 0, 0, 0.473, 0, 0, 0, 0.473, 5.31898, -0.886214, -6.83273)
+
+[node name="Tree2" parent="." instance=ExtResource("12_t0e43")]
+transform = Transform3D(0.46, 0, 0, 0, 0.46, 0, 0, 0, 0.46, 3.27871, -0.871202, 7.16046)
