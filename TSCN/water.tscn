@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://i7pqyl2dcob8"]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Texture2D" uid="uid://cjhfkafva12kh" path="res://Textures/water/Foam.png" id="1_6fgae"]
 [ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/water/Water_N_A.png" id="2_gitlb"]
 [ext_resource type="Texture2D" uid="uid://dvbquy25uq4dk" path="res://Textures/water/Water_N_B.png" id="3_cm8cv"]
-[ext_resource type="Shader" path="res://watershader.gdshader" id="4_25t75"]
+[ext_resource type="Shader" path="res://Shader/watershader.gdshader" id="4_25t75"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ylnww"]
 render_priority = 0

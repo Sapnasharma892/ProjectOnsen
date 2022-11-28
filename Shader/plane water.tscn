@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://u7pnq2051evk"]
+[gd_scene load_steps=6 format=3 uid="uid://tvh7d0m5srtv"]
 
-[ext_resource type="Texture2D" uid="uid://b1p72tchawuck" path="res://Water/Foam.png" id="1_dobno"]
-[ext_resource type="Texture2D" uid="uid://2o4vvn2lk08p" path="res://Water/water_normal_1.png" id="2_wty86"]
-[ext_resource type="Texture2D" uid="uid://bant3ks711c4s" path="res://Water/water_normal_2.png" id="3_2r5t4"]
-[ext_resource type="Shader" path="res://.watershader2.gdshader" id="4_k6pks"]
+[ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/water/Water_N_A.png" id="2_wty86"]
+[ext_resource type="Texture2D" uid="uid://dvbquy25uq4dk" path="res://Textures/water/Water_N_B.png" id="3_2r5t4"]
+[ext_resource type="Shader" path="res://Shader/watershader.gdshader" id="4_k6pks"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fxi7i"]
 render_priority = 0
@@ -20,7 +19,6 @@ refraction = 0.075
 projector = null
 normalmap_b_sampler = ExtResource("3_2r5t4")
 normalmap_a_sampler = ExtResource("2_wty86")
-foam_sampler = ExtResource("1_dobno")
 foam_level = 0.872
 depth_offset = 0.797
 color_shallow = Color(0.14902, 0.576471, 0.427451, 1)
@@ -30,7 +28,7 @@ beers_law = null
 [sub_resource type="PlaneMesh" id="PlaneMesh_i7rjv"]
 lightmap_size_hint = Vector2i(512, 512)
 material = SubResource("ShaderMaterial_fxi7i")
-size = Vector2(20, 20)
+size = Vector2(2, 5)
 
 [node name="Node3D" type="Node3D"]
 
