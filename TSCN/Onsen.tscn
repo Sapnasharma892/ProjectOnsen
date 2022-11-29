@@ -14,7 +14,7 @@
 [ext_resource type="MeshLibrary" uid="uid://bohjxbuf2pfdd" path="res://Mesh/1Fence.meshlib" id="13_u1tyv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drmo7"]
-albedo_color = Color(1, 0.392157, 1, 1)
+albedo_color = Color(0.0156863, 0.0627451, 0.00392157, 1)
 ao_enabled = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_xlekj"]
@@ -55,15 +55,15 @@ mesh = SubResource("PlaneMesh_bjeyc")
 skeleton = NodePath("../..")
 
 [node name="Nameplate" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.31584e-08, 0, 0.211331, 0, 1, 0, -0.987349, 0, -9.23758e-09, 7.84585, -0.939337, 5.47038)
+transform = Transform3D(-4.31584e-08, 0, 0.211331, 0, 1, 0, -0.987349, 0, -9.23758e-09, 7.84585, -0.916228, 5.47038)
 mesh = ExtResource("1_1ajja")
 
 [node name="smallhut" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.0237691, 0, -0.342903, 0, 1.815, 0, 0.999717, 0, 0.00815281, 7.93138, 0, 4.0694)
+transform = Transform3D(0.0237691, 0, -0.342903, 0, 1.815, 0, 0.999717, 0, 0.00815281, 7.93138, 0, 2.84941)
 mesh = SubResource("PrismMesh_1ko32")
 
 [node name="smallhut2" type="MeshInstance3D" parent="smallhut"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.37059, 0, -0.303366)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.70785, 0, -0.396061)
 mesh = SubResource("PrismMesh_1ko32")
 skeleton = NodePath("../..")
 
@@ -145,3 +145,23 @@ transform = Transform3D(0.473, 0, 0, 0, 0.473, 0, 0, 0, 0.473, 5.20242, -0.88621
 
 [node name="Tree2" parent="." instance=ExtResource("12_t0e43")]
 transform = Transform3D(0.46, 0, 0, 0, 0.46, 0, 0, 0, 0.46, 3.27871, -0.871202, 7.16046)
+
+[node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.818531, 0.569067, -0.0785495, -0.00100263, 0.138151, 0.990411, 0.574462, -0.810603, 0.113651, 0, 7.35019, 8.16485)
+light_color = Color(0.960784, 0.780392, 0.682353, 1)
+shadow_enabled = true
+shadow_bias = 0.393
+shadow_transmittance_bias = -2.209
+shadow_opacity = 0.49
+
+[node name="DirectionalLight3d2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.624616, 0.519479, 0.583092, 0.126565, -0.669451, 0.731995, 0.770608, 0.531015, 0.352402, 4.7899, 6.80237, 0)
+light_color = Color(0.172549, 0.670588, 0.560784, 1)
+light_energy = 0.803
+light_indirect_energy = 2.473
+light_volumetric_fog_energy = 7.414
+shadow_enabled = true
+
+[node name="Camera3d" type="Camera3D" parent="."]
+transform = Transform3D(0.0047714, 0.212079, -0.977241, 0.00861131, 0.977207, 0.212114, 0.999952, -0.0094274, 0.00283637, -17.2651, 6.53577, 0)
+fov = 59.9287
