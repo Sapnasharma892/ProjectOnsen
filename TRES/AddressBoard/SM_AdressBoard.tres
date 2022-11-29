@@ -1,6 +1,6 @@
-[gd_resource type="ArrayMesh" load_steps=3 format=3 uid="uid://dmm0kvji4c4je"]
+[gd_resource type="ArrayMesh" load_steps=3 format=3 uid="uid://tr4k7jf87gm3"]
 
-[ext_resource type="Material" uid="uid://c78b80p8uv003" path="res://Material/AddressBoard/MT_WoodBarrel_3d.tres" id="1_kexm2"]
+[ext_resource type="Material" path="res://Material/AddressBoard/MT_WoodBarrel_3d.tres" id="1_kexm2"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kodfx"]
 _surfaces = [{

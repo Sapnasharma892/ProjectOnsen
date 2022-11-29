@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx3tcadn0ciwt"
-path.s3tc="res://.godot/imported/Tree Branch.png-4605a56f5ece5f8f8e9206a507cb79f7.s3tc.ctex"
-path.etc2="res://.godot/imported/Tree Branch.png-4605a56f5ece5f8f8e9206a507cb79f7.etc2.ctex"
+path.s3tc="res://.godot/imported/Tree Branch.png-0417ee24f04131ebf00c5c6008263f9a.s3tc.ctex"
+path.etc2="res://.godot/imported/Tree Branch.png-0417ee24f04131ebf00c5c6008263f9a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://References/Tree Branch.png"
-dest_files=["res://.godot/imported/Tree Branch.png-4605a56f5ece5f8f8e9206a507cb79f7.s3tc.ctex", "res://.godot/imported/Tree Branch.png-4605a56f5ece5f8f8e9206a507cb79f7.etc2.ctex"]
+source_file="res://Textures/Tree/Tree Branch.png"
+dest_files=["res://.godot/imported/Tree Branch.png-0417ee24f04131ebf00c5c6008263f9a.s3tc.ctex", "res://.godot/imported/Tree Branch.png-0417ee24f04131ebf00c5c6008263f9a.etc2.ctex"]
 
 [params]
 
