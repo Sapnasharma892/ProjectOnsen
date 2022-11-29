@@ -141,26 +141,32 @@ metadata/_editor_floor_ = Vector3(0, -9, 0)
 transform = Transform3D(-0.99982, 0, 0.0189706, 0, 1, 0, -0.0189706, 0, -0.99982, -5.66046, -0.692363, -0.14894)
 
 [node name="Tree" parent="." instance=ExtResource("12_t0e43")]
-transform = Transform3D(0.473, 0, 0, 0, 0.473, 0, 0, 0, 0.473, 5.20242, -0.886214, -5.27977)
+transform = Transform3D(0.473, 0, 0, 0, 0.473, 0, 0, 0, 0.473, 5.20242, -0.886214, -6.26574)
 
 [node name="Tree2" parent="." instance=ExtResource("12_t0e43")]
 transform = Transform3D(0.46, 0, 0, 0, 0.46, 0, 0, 0, 0.46, 3.27871, -0.871202, 7.16046)
 
 [node name="DirectionalLight3d" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.818531, 0.569067, -0.0785495, -0.00100263, 0.138151, 0.990411, 0.574462, -0.810603, 0.113651, 0, 7.35019, 8.16485)
-light_color = Color(0.960784, 0.780392, 0.682353, 1)
+transform = Transform3D(0.818531, 0.569067, -0.0785496, -0.120242, 0.303425, 0.945238, 0.561738, -0.764262, 0.316789, 0, 7.35019, 8.16485)
+light_color = Color(0.92549, 0.937255, 0.921569, 1)
+light_energy = 1.335
 shadow_enabled = true
 shadow_bias = 0.393
 shadow_transmittance_bias = -2.209
 shadow_opacity = 0.49
 
 [node name="DirectionalLight3d2" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.624616, 0.519479, 0.583092, 0.126565, -0.669451, 0.731995, 0.770608, 0.531015, 0.352402, 4.7899, 6.80237, 0)
-light_color = Color(0.172549, 0.670588, 0.560784, 1)
+transform = Transform3D(-0.113325, -0.952172, -0.283771, 0.00528111, -0.286184, 0.95816, -0.993544, 0.107085, 0.0374604, 7.74853, 7.00823, 0.245252)
+light_color = Color(0.698039, 0.67451, 0.631373, 1)
 light_energy = 0.803
 light_indirect_energy = 2.473
 light_volumetric_fog_energy = 7.414
+light_negative = true
 shadow_enabled = true
+shadow_bias = 1.774
+shadow_normal_bias = 0.0
+shadow_opacity = 0.75
+shadow_blur = 0.0
 
 [node name="Camera3d" type="Camera3D" parent="."]
 transform = Transform3D(0.0047714, 0.212079, -0.977241, 0.00861131, 0.977207, 0.212114, 0.999952, -0.0094274, 0.00283637, -17.2651, 6.53577, 0)

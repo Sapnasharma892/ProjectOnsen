@@ -14,3 +14,8 @@ config/name="ProjectOnsen"
 run/main_scene="res://TSCN/Onsen.tscn"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 config/icon="res://icon.svg"
+
+[editor]
+
+movie_writer/movie_file="D:/Project/Project onsen/ProjectOnsen/Movie/test 1.avi"
+movie_writer/disable_vsync=true
