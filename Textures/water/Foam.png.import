@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjhfkafva12kh"
-path.s3tc="res://.godot/imported/Foam.png-c6fcf39692ad77e0c703e3fd76351f11.s3tc.ctex"
-path.etc2="res://.godot/imported/Foam.png-c6fcf39692ad77e0c703e3fd76351f11.etc2.ctex"
+path.s3tc="res://.godot/imported/Foam.png-a55485b53e8cdfd00fc668580bb05953.s3tc.ctex"
+path.etc2="res://.godot/imported/Foam.png-a55485b53e8cdfd00fc668580bb05953.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/water/Foam.png"
-dest_files=["res://.godot/imported/Foam.png-c6fcf39692ad77e0c703e3fd76351f11.s3tc.ctex", "res://.godot/imported/Foam.png-c6fcf39692ad77e0c703e3fd76351f11.etc2.ctex"]
+source_file="res://Textures/Water/Foam.png"
+dest_files=["res://.godot/imported/Foam.png-a55485b53e8cdfd00fc668580bb05953.s3tc.ctex", "res://.godot/imported/Foam.png-a55485b53e8cdfd00fc668580bb05953.etc2.ctex"]
 
 [params]
 

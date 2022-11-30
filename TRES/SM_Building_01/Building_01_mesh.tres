@@ -1,9 +1,9 @@
-[gd_resource type="ArrayMesh" load_steps=6 format=3 uid="uid://c0wact2rt2652"]
+[gd_resource type="ArrayMesh" load_steps=6 format=3 uid="uid://bw8nong7cm5ve"]
 
-[ext_resource type="Material" uid="uid://b3u427qxfxqxo" path="res://Material/Building_01/MT_ConcreteWall.tres" id="1_nxc0x"]
-[ext_resource type="Material" uid="uid://bkmrtn0ymk2xt" path="res://Material/Building_01/MT_ConcreteWallBase.tres" id="2_64h4y"]
-[ext_resource type="Material" uid="uid://c872ay3ng0xh" path="res://Material/Building_01/MT_ConcreteRoof.tres" id="3_3c4bq"]
-[ext_resource type="Material" uid="uid://7l1h4l1f8l5f" path="res://Material/Building_01/MT_WoodFrame_Doors.tres" id="4_305q4"]
+[ext_resource type="Material" uid="uid://b3u427qxfxqxo" path="res://Material/SM_Building_01/MT_ConcreteWall.tres" id="1_nxc0x"]
+[ext_resource type="Material" uid="uid://bkmrtn0ymk2xt" path="res://Material/SM_Building_01/MT_ConcreteWallBase.tres" id="2_64h4y"]
+[ext_resource type="Material" uid="uid://ctupnr22ojemg" path="res://Material/SM_Building_01/MT_ConcreteRoof.tres" id="3_3c4bq"]
+[ext_resource type="Material" uid="uid://7l1h4l1f8l5f" path="res://Material/SM_Building_01/MT_WoodFrame_Doors.tres" id="4_305q4"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_17kt2"]
 _surfaces = [{
