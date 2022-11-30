@@ -39,7 +39,6 @@ metallic_specular = 0.76
 normal_enabled = true
 normal_scale = 1.56
 ao_enabled = true
-heightmap_enabled = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_bjeyc"]
 material = SubResource("StandardMaterial3D_gbydt")
@@ -97,7 +96,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54395, -0.770015, 0.286491)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33795, -0.767187, -3.68642)
 
 [node name="SM_BarrelOpen_05" parent="Barrels" instance=ExtResource("7_65epl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0491841, -0.779763, -3.67973)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0491841, -0.837242, -3.67973)
 
 [node name="SM_BarrelOpen_06" parent="Barrels" instance=ExtResource("7_65epl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.67953, -0.772676, 5.08584)
