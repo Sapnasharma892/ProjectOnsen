@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="ArrayMesh" path="res://TRES/SM_Building_01/Building_01_mesh.tres" id="1_soifk"]
+[ext_resource type="ArrayMesh" path="res://TRES/SM_Building_01/Building_01.tres" id="1_soifk"]
 
 [node name="Node3d" type="Node3D"]
 
