@@ -1,8 +1,8 @@
-[gd_resource type="ArrayMesh" load_steps=6 format=3]
+[gd_resource type="ArrayMesh" load_steps=6 format=3 uid="uid://gpujd0fn31c2"]
 
-[ext_resource type="Material" uid="uid://do2i2fnpk2p6n" path="res://Material/Tree/MT_Bark.material" id="1_h4tdg"]
-[ext_resource type="Shader" path="res://Shader/grass1.gdshader" id="2_oq64g"]
-[ext_resource type="Texture2D" path="res://Textures/Tree/Tree Branch.png" id="3_bo0yn"]
+[ext_resource type="Material" uid="uid://do2i2fnpk2p6n" path="res://Material/SM_Tree/MT_Bark.material" id="1_h4tdg"]
+[ext_resource type="Shader" path="res://Shader/Grass.gdshader" id="2_oq64g"]
+[ext_resource type="Texture2D" uid="uid://cx3tcadn0ciwt" path="res://Textures/Tree/Tree Branch.png" id="3_bo0yn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_25qns"]
 render_priority = 0

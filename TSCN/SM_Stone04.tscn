@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bainxa266kinw"]
+[gd_scene load_steps=2 format=3]
 
-[ext_resource type="ArrayMesh" uid="uid://dgi1wpcygfglj" path="res://TRES/Stone/SM_Stone04.tres" id="1_nw6nq"]
+[ext_resource type="ArrayMesh" path="res://TRES/SM_Stone/SM_Stone04.tres" id="1_nw6nq"]
 
 [node name="Node3d" type="Node3D"]
 

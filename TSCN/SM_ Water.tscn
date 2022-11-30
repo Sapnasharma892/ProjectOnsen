@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://tvh7d0m5srtv"]
+[gd_scene load_steps=6 format=3]
 
-[ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/water/Water_N_A.png" id="2_wty86"]
-[ext_resource type="Texture2D" uid="uid://dvbquy25uq4dk" path="res://Textures/water/Water_N_B.png" id="3_2r5t4"]
-[ext_resource type="Shader" path="res://Shader/watershader.gdshader" id="4_k6pks"]
+[ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/Water/Water_N_A.png" id="2_wty86"]
+[ext_resource type="Texture2D" uid="uid://dvbquy25uq4dk" path="res://Textures/Water/Water_N_B.png" id="3_2r5t4"]
+[ext_resource type="Shader" path="res://Shader/Water.gdshader" id="4_k6pks"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fxi7i"]
 render_priority = 0

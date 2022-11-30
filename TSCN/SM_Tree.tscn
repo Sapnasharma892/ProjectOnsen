@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://ck4eukt3okumg"]
+[gd_scene load_steps=2 format=3 uid="uid://5yye2o338upv"]
 
-[ext_resource type="ArrayMesh" path="res://TRES/Tree/SM_Tree01.tres" id="1_usrs8"]
+[ext_resource type="ArrayMesh" path="res://TRES/SM_Tree/SM_Tree01.tres" id="1_usrs8"]
 
 [node name="Node3d" type="Node3D"]
 

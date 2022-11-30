@@ -1,6 +1,6 @@
-[gd_resource type="ArrayMesh" load_steps=3 format=3 uid="uid://cydfm7n08iiuj"]
+[gd_resource type="ArrayMesh" load_steps=3 format=3]
 
-[ext_resource type="Material" uid="uid://citu0d3q13hbn" path="res://Material/Fence/MT_WoodRoof_E.tres" id="1_gaox8"]
+[ext_resource type="Material" path="res://Material/SM_Fence/MT_WoodRoof_E.tres" id="1_gaox8"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_iyh76"]
 _surfaces = [{

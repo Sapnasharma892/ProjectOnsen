@@ -1,6 +1,6 @@
-[gd_resource type="ArrayMesh" load_steps=3 format=3 uid="uid://cnk1n6hn0fua3"]
+[gd_resource type="ArrayMesh" load_steps=3 format=3]
 
-[ext_resource type="Material" uid="uid://dnmonyj0gw5al" path="res://TRES/Fence/Fence_Corner_n_3d.tres" id="1_dc54q"]
+[ext_resource type="Material" path="res://TRES/SM_Fence/Fence_Corner_n_3d.tres" id="1_dc54q"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pa2ln"]
 _surfaces = [{

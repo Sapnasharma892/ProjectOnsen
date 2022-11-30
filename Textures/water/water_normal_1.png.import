@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2o4vvn2lk08p"
-path.s3tc="res://.godot/imported/water_normal_1.png-5f6df2ae1fe8b49a2c78172cf644efca.s3tc.ctex"
-path.etc2="res://.godot/imported/water_normal_1.png-5f6df2ae1fe8b49a2c78172cf644efca.etc2.ctex"
+path.s3tc="res://.godot/imported/water_normal_1.png-e53c15acab675bf4433ea61e022296bc.s3tc.ctex"
+path.etc2="res://.godot/imported/water_normal_1.png-e53c15acab675bf4433ea61e022296bc.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/water/water_normal_1.png"
-dest_files=["res://.godot/imported/water_normal_1.png-5f6df2ae1fe8b49a2c78172cf644efca.s3tc.ctex", "res://.godot/imported/water_normal_1.png-5f6df2ae1fe8b49a2c78172cf644efca.etc2.ctex"]
+source_file="res://Textures/Water/water_normal_1.png"
+dest_files=["res://.godot/imported/water_normal_1.png-e53c15acab675bf4433ea61e022296bc.s3tc.ctex", "res://.godot/imported/water_normal_1.png-e53c15acab675bf4433ea61e022296bc.etc2.ctex"]
 
 [params]
 

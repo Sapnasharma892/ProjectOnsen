@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="ArrayMesh" path="res://TRES/SM_Stone/SM_Stone02.tres" id="1_umasu"]
+[ext_resource type="ArrayMesh" path="res://TRES/SM_Building_01/Building_01_mesh.tres" id="1_soifk"]
 
 [node name="Node3d" type="Node3D"]
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
-mesh = ExtResource("1_umasu")
+mesh = ExtResource("1_soifk")
