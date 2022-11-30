@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://butpe1bhc7i1c"]
 
-[ext_resource type="Texture2D" path="res://Textures/Water/Water_N_A.png" id="2_gitlb"]
-[ext_resource type="Texture2D" path="res://Textures/Water/Water_N_B.png" id="3_cm8cv"]
+[ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/Water/Water_N_A.png" id="2_gitlb"]
+[ext_resource type="Texture2D" uid="uid://dvbquy25uq4dk" path="res://Textures/Water/Water_N_B.png" id="3_cm8cv"]
 [ext_resource type="Shader" path="res://Shader/Water.gdshader" id="4_25t75"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ylnww"]
@@ -21,8 +21,8 @@ normalmap_b_sampler = ExtResource("3_cm8cv")
 normalmap_a_sampler = ExtResource("2_gitlb")
 foam_level = 0.5
 depth_offset = -0.75
-color_shallow = Color(0.184314, 0.796078, 0.898039, 1)
-color_deep = Color(0.623529, 0.662745, 0.556863, 1)
+color_shallow = Color(0.345098, 0.384314, 0.419608, 1)
+color_deep = Color(0.137255, 0.254902, 0.262745, 1)
 beers_law = null
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_gob76"]
@@ -32,4 +32,5 @@ size = Vector2(5, 2)
 [node name="Node3d" type="Node3D"]
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0351062, 0)
 mesh = SubResource("PlaneMesh_gob76")
