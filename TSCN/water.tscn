@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=7 format=3 uid="uid://du0xjvlw4h4vo"]
 
 [ext_resource type="Texture2D" uid="uid://cjhfkafva12kh" path="res://Textures/water/Foam.png" id="1_6fgae"]
 [ext_resource type="Texture2D" uid="uid://dlgr6ev14128m" path="res://Textures/water/Water_N_A.png" id="2_gitlb"]
@@ -14,7 +14,7 @@ wave_b = Vector4(0.1, 0.6, 0.3, 0.5)
 wave_a = Vector4(0.1, 0.1, 0.2, 0.5)
 uv_sampler_strength = 3.781
 uv_sampler_scale = Vector2(-0.991, -0.817)
-sampler_scale = Vector2(0.436, 0.3)
+sampler_scale = Vector2(0.554, 0.393)
 sampler_direction = Vector2(-0.03, -0.001)
 refraction = -0.42
 projector = null
@@ -23,8 +23,8 @@ normalmap_a_sampler = ExtResource("2_gitlb")
 foam_sampler = ExtResource("1_6fgae")
 foam_level = -0.111
 depth_offset = 0.107
-color_shallow = Color(0.0470588, 0.415686, 0.356863, 1)
-color_deep = Color(0.168627, 0.415686, 0.498039, 1)
+color_shallow = Color(0.184314, 0.796078, 0.898039, 1)
+color_deep = Color(0.298039, 0.729412, 0.654902, 1)
 beers_law = null
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_gob76"]
