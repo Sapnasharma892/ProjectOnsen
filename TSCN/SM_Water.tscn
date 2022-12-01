@@ -21,8 +21,8 @@ normalmap_b_sampler = ExtResource("3_cm8cv")
 normalmap_a_sampler = ExtResource("2_gitlb")
 foam_level = 0.5
 depth_offset = -0.75
-color_shallow = Color(0.345098, 0.384314, 0.419608, 1)
-color_deep = Color(0.137255, 0.254902, 0.262745, 1)
+color_shallow = Color(0.0588235, 0.113725, 0.301961, 0.992157)
+color_deep = Color(0.180392, 0.290196, 0.486275, 1)
 beers_law = null
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_gob76"]
