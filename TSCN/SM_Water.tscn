@@ -8,9 +8,9 @@
 render_priority = 0
 shader = ExtResource("4_25t75")
 wave_speed = -0.021
-wave_c = Vector4(0.1, 0, 0.1, 0.5)
-wave_b = Vector4(0.1, 0.6, 0.3, 0.5)
-wave_a = Vector4(0.1, 0.1, 0.16, 0.5)
+wave_c = Vector4(-0.004, 0, 0.1, 0.459)
+wave_b = Vector4(0.03, 0.6, 0.3, 0.5)
+wave_a = Vector4(0.028, 0.1, 0.16, 0.5)
 uv_sampler_strength = 0.04
 uv_sampler_scale = Vector2(0.89, 0.25)
 sampler_scale = Vector2(0.25, 0.25)
